@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: naked-jim-tracker
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: X_BEARER_TOKEN
+        sync: false
